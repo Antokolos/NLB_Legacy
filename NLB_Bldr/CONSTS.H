@@ -1,0 +1,84 @@
+#ifndef _CONSTS_H
+#define _CONSTS_H
+#include "StdAfx.h"
+
+#define SZ_NLB_CLIP_FORMAT _T("NLB Clipboard Format")
+
+#define SZ_TRUE _TEXT("true")
+
+const int I_ADDITIONAL_SPACE_FOR_X = 300;
+const int I_ADDITIONAL_SPACE_FOR_Y = 300;
+
+const int IERR_OUT_OF_MEMORY = 1;
+const int IERR_FILE_CORRUPT = 2;
+const int IERR_CLIPBOARD_ERROR = 3;
+const int IERR_UNKNOWN_ERROR_WHILE_PROCESSING_TRIGGERED_STRING_VAR = 4;
+
+const int I_DEPARAM_ERR_SUCCESS = 0;
+const int I_DEPARAM_ERR_IN_VAR_VALUE = 1;
+const int I_DEPARAM_ERR_IN_VAR_INPUT = 2;
+
+const int ILVERR_COL0_WIDTH = 127;
+const int ILVERR_COL1_WIDTH = 127;
+
+const int ILVTRIGSTR_COL0_WIDTH = 100;
+const int ILVTRIGSTR_COL1_WIDTH = 316;
+
+const int ILVTRIGSTRPROP_COL0_WIDTH = 100;
+const int ILVTRIGSTRPROP_COL1_WIDTH = 270;
+
+const int ILVSTRVARS_COL0_WIDTH = 100;
+const int ILVSTRVARS_COL1_WIDTH = 316;
+
+const int ILVBOOKVARS_COL0_WIDTH = 100;
+const int ILVBOOKVARS_COL1_WIDTH = 316;
+
+const int ILVPROBVARS_COL0_WIDTH = 316;
+const int ILVPROBVARS_COL1_WIDTH = 100;
+
+const int ILVMODIFICATIONS_COL0_WIDTH = 100;
+const int ILVMODIFICATIONS_COL1_WIDTH = 291;
+
+const int ILVLINKNUMBERS_COL0_WIDTH = 291;
+const int ILVLINKNUMBERS_COL1_WIDTH = 128;
+
+const int ILVLEAFS_COL0_WIDTH = 416;
+const int ILVSRES_COL0_WIDTH = 416;
+
+const int MAX_LOADSTRING = 1024;	
+const COLORREF cr_PEN_DEFAULT = RGB(0, 0, 0);
+const COLORREF cr_BRUSH_DEFAULT = RGB(0, 250, 0);
+const COLORREF cr_TXT_DEFAULT = RGB(0, 0, 0);
+const double W_ARROW_HEIGHT_COEF = 0.25;
+const double W_ARROW_WIDTH_COEF = 30;
+const double ARC_SELECTION_WIDTH = 30.0;	// Ўирина полосы вокруг дуги, при щелчке по которой считаетс€, что дуга выделена.
+const int I_RESIZE_BORDER_WIDTH = 5;
+const int I_DEFAULT_PAGE_WIDTH = 100;
+const int I_DEFAULT_PAGE_HEIGHT = 50;
+const int I_FOCUS_RECT_OFFSET = 5;
+const int I_PEN_WIDTH = 2;
+const int I_EDIT_MENU_POS = 1;
+const int I_EDIT_PAGE_MENU_POS = 5;
+const int I_EDIT_LINK_MENU_POS = 6;
+const int I_BTN_BORDER = 2;
+const int I_ONE_LINE_SCROLL_VALUE = 5;
+
+#define PARAM_NONE          0x00000000
+#define PARAM_DRAW_FOCUS    0x00000001
+#define PARAM_IS_STARTPOINT 0x00000010
+#define PARAM_ERASE         0x00000100
+#define PARAM_DRAW          0x00001000
+
+const DWORD DW_MAX_DWORD = 0xFFFFFFFF;
+const int I_MAX_INT = 2147483647;
+
+const BOOL F_FIND_IN_PAGES = TRUE;
+const BOOL F_FIND_IN_LNKS = TRUE;
+const BOOL F_FIND_IN_BOOKVARS = TRUE;
+const BOOL F_FIND_IN_PROBVARS = TRUE;
+const BOOL F_CASE_SENSITIVE = FALSE;
+const BOOL F_WHOLE_WORDS = FALSE;
+
+const double _PI = 3.1415926;
+
+#endif

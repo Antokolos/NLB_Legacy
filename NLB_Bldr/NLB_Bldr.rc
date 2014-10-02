@@ -1,0 +1,1202 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NLB_Bldr.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NLB_Bldr.ico"
+IDR_NLB_BLTYPE          ICON    DISCARDABLE     "res\\NLB_BldrDoc.ico"
+IDR_BOOKVAR             ICON    DISCARDABLE     "res\\bookvar.ico"
+IDR_LINK                ICON    DISCARDABLE     "res\\link.ico"
+IDR_LEAF                ICON    DISCARDABLE     "res\\leaf.ico"
+IDR_PROBVAR             ICON    DISCARDABLE     "res\\probvar.ico"
+IDR_PAGE                ICON    DISCARDABLE     "res\\page.ico"
+IDR_STRVAR              ICON    DISCARDABLE     "res\\strvar.ico"
+IDR_TRIGSTR             ICON    DISCARDABLE     "res\\trigstr.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_FIND
+    SEPARATOR
+    BUTTON      ID_EDIT_ADDSTARTPOINT
+    BUTTON      ID_EDIT_ADDLINK
+    BUTTON      ID_EDIT_ADDBOOKPAGE
+    BUTTON      ID_EDIT_BOOKVARIABLES
+    BUTTON      ID_EDIT_PROBABILITYVARIABLES
+    BUTTON      ID_EDIT_STRINGVARIABLES
+    BUTTON      ID_EDIT_TRIGGEREDSTRINGS
+    BUTTON      ID_EDIT_LEAFS
+    SEPARATOR
+    BUTTON      ID_EDIT_EDITLINK_DELETELINK
+    BUTTON      ID_EDIT_EDITLINK_EDITPROPERTIES
+    SEPARATOR
+    BUTTON      ID_EDIT_EDITPAGE_DELETEPAGE
+    BUTTON      ID_EDIT_EDITPAGE_EDITPROPERTIES
+    SEPARATOR
+    BUTTON      ID_EDIT_CHANGEALLPAGES
+    SEPARATOR
+    BUTTON      ID_BUILD_COMPILE
+    BUTTON      ID_FILE_EXPORTTO_NLBENGINEV10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        POPUP "Export To..."
+        BEGIN
+            MENUITEM "&NLB Engine v0.1",            ID_FILE_EXPORTTO_NLBENGINEV10
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Fi&nd...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM SEPARATOR
+        POPUP "Edit p&age..."
+        BEGIN
+            MENUITEM "&Delete page",                ID_EDIT_EDITPAGE_DELETEPAGE
+
+            MENUITEM "&Edit properties...",         ID_EDIT_EDITPAGE_EDITPROPERTIES
+
+        END
+        POPUP "Edit l&ink..."
+        BEGIN
+            MENUITEM "&Delete link",                ID_EDIT_EDITLINK_DELETELINK
+
+            MENUITEM "&Edit properties...",         ID_EDIT_EDITLINK_EDITPROPERTIES
+
+        END
+        MENUITEM "Add &Startpoint",             ID_EDIT_ADDSTARTPOINT
+        MENUITEM "Add &Link",                   ID_EDIT_ADDLINK
+        MENUITEM "Add &Book Page",              ID_EDIT_ADDBOOKPAGE
+        MENUITEM "S&elect All\tCtrl+A",         ID_EDIT_SELECTALL
+        MENUITEM "Book &variables...",          ID_EDIT_BOOKVARIABLES
+        MENUITEM "P&robability variables...",   ID_EDIT_PROBABILITYVARIABLES
+        MENUITEM "Strin&g variables...",        ID_EDIT_STRINGVARIABLES
+        MENUITEM "Lea&fs...",                   ID_EDIT_LEAFS
+        MENUITEM "C&hange all pages",           ID_EDIT_CHANGEALLPAGES
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Build"
+    BEGIN
+        MENUITEM "&Compile",                    ID_BUILD_COMPILE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NLB Builder...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EDIT_SELECTALL,      VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NLB Builder..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20,SS_SUNKEN | 
+                    WS_BORDER
+    LTEXT           "Non-Linear Book Builder Version 0.1",IDC_STATIC,40,10,
+                    119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Anton P. Kolosov (""Antokolos"") 2003-2004",
+                    IDC_STATIC,40,25,164,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_PAGE_PROPERTIES DIALOG DISCARDABLE  0, 0, 350, 287
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Page properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,293,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,24,50,14
+    LTEXT           "Page caption:",IDC_STATIC,7,7,54,14,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PAGE_CAPTION,66,7,188,14,ES_AUTOHSCROLL
+    LTEXT           "Page variable:",IDC_STATIC,7,24,54,14,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PAGE_VAR,66,24,223,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAGE_TEXT,7,60,336,101,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Page text:",IDC_STATIC,7,42,54,14,SS_SUNKEN
+    CONTROL         "Set page color",IDC_BUTT_PAGE_CLR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,215,42,62,14
+    CONTROL         "Set border color",IDC_BUTT_BRDR_CLR,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,281,42,62,14
+    CONTROL         "Set text color",IDC_BUTT_TXT_CLR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,149,42,62,14
+    CONTROL         "List1",IDC_LIST_LINK_NUMBERS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,183,282,78
+    PUSHBUTTON      "Move Up",IDC_BUTTON_MOVE_UP,293,183,50,14
+    PUSHBUTTON      "Move Down",IDC_BUTTON_MOVE_DOWN,293,204,50,14
+    PUSHBUTTON      "Edit",IDC_BUTTON_EDIT,293,226,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,293,247,50,14
+    LTEXT           "Page links:",IDC_STATIC,7,164,54,14,SS_SUNKEN
+    PUSHBUTTON      "Revert order",IDC_BUTTON_REVERT_ORDER,67,164,50,14
+    PUSHBUTTON      "Abort mass operation",IDC_BUTTON_ABORT_MASS_OPERATION,
+                    271,266,72,14
+    CONTROL         "Progress1",IDC_PROGRESS_MASS_OPERATION,
+                    "msctls_progress32",PBS_SMOOTH | WS_BORDER,27,266,174,14
+    PUSHBUTTON      "< Prev",IDC_BUTTON_PREV_PAGE,203,266,31,14
+    PUSHBUTTON      "Next >",IDC_BUTTON_NEXT_PAGE,237,266,31,14
+    LTEXT           "100%",IDC_STATIC_PERCENT_COMPLETE,7,272,18,8
+    CONTROL         "Use",IDC_CHECK_USE_PAGE_CAPTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,260,9,29,10
+END
+
+IDD_DIALOG_LINK_PROPERTIES DIALOG DISCARDABLE  0, 0, 334, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Link properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,127,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,127,50,14
+    LTEXT           "Link caption:",IDC_STATIC,7,7,64,14,SS_SUNKEN
+    LTEXT           "Link constraints:",IDC_STATIC,7,24,64,14,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_LINK_CAPTION,76,7,251,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LINK_CONSTRAINTS,76,24,251,14,ES_AUTOHSCROLL
+    CONTROL         "Set link color",IDC_BUTTON_SET_LINK_COLOR,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,259,41,68,14
+    CONTROL         "List1",IDC_LIST_MODIFICATIONS,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,68,263,54
+    PUSHBUTTON      "Edit",IDC_BUTTON_EDIT,277,68,50,14
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,277,88,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,277,108,50,14
+    LTEXT           "Var modifications:",IDC_STATIC,7,49,64,14,SS_SUNKEN
+END
+
+IDD_DIALOG_COMPERR DIALOG DISCARDABLE  0, 0, 186, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Errors detected!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close this window",IDOK,7,188,172,14
+    CONTROL         "List1",IDC_LIST_COMPERR,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,172,177
+END
+
+IDD_DIALOG_BOOKVARS DIALOG DISCARDABLE  0, 0, 294, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Book variables..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,159,50,14
+    CONTROL         "List1",IDC_LIST_BOOKVARS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,280,148
+    PUSHBUTTON      "Edit...",IDC_BUTTON_EDIT_BOOKVAR,61,159,50,14
+    PUSHBUTTON      "Add...",IDC_BUTTON_ADD_BOOKVAR,115,159,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE_BOOKVAR,169,159,50,14
+END
+
+IDD_DIALOG_BOOKVAR_PROPERTIES DIALOG DISCARDABLE  0, 0, 334, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Book variable properties..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,65,50,14
+    LTEXT           "Variable name:",IDC_STATIC,7,7,64,14,SS_SUNKEN
+    LTEXT           "Variable body:",IDC_STATIC_BOOKVAR_BODY,7,24,64,14,
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_BOOKVAR_NAME,76,7,251,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOOKVAR_BODY,76,24,251,14,ES_AUTOHSCROLL
+    CONTROL         "Global variable",IDC_CHECK_GLOBAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,46,63,10
+    LTEXT           "Initial value =",IDC_STATIC_INITVAL,76,46,42,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_INITVAL,122,46,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+END
+
+IDD_DIALOG_LEAFS DIALOG DISCARDABLE  0, 0, 294, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Book leafs..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,159,50,14
+    CONTROL         "List1",IDC_LIST_LEAFS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,280,148
+    PUSHBUTTON      "Go to",IDC_BUTTON_GOTO,60,159,50,14
+END
+
+IDD_DIALOG_PROBABILITY DIALOG DISCARDABLE  0, 0, 294, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Probability variables..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,160,50,14
+    CONTROL         "List1",IDC_LIST_PROBABILITY_VARS,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,280,148
+    PUSHBUTTON      "Edit...",IDC_BUTTON_EDIT_PROBVAR,61,160,50,14
+    PUSHBUTTON      "Add...",IDC_BUTTON_ADD_PROBVAR,115,160,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE_PROBVAR,169,160,50,14
+END
+
+IDD_DIALOG_PROBVAR_PROPERTIES DIALOG DISCARDABLE  0, 0, 234, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Probability variable properties..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,177,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,42,50,14
+    LTEXT           "Variable name:",IDC_STATIC,7,7,64,14,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PROBVAR_NAME,73,7,154,14,ES_AUTOHSCROLL
+    GROUPBOX        "Dice (in KdY format)",IDC_STATIC,7,25,166,40
+    EDITTEXT        IDC_EDIT_DICE_K,15,40,43,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER
+    LTEXT           "d",IDC_STATIC,61,40,8,10
+    EDITTEXT        IDC_EDIT_DICE_Y,69,40,43,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER
+END
+
+IDD_DIALOG_FIND_TXT DIALOG DISCARDABLE  0, 0, 329, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find text..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "SEARCH!",IDOK,272,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,272,24,50,14
+    LTEXT           "Find what?",IDC_STATIC,7,13,36,8
+    EDITTEXT        IDC_EDIT_STR_TO_FIND,45,7,221,14,ES_AUTOHSCROLL
+    CONTROL         "Find in pages",IDC_CHECK_FIND_IN_PAGES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,44,105,10
+    CONTROL         "Find in links",IDC_CHECK_FIND_IN_LNKS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,57,105,10
+    CONTROL         "Find in book variables",IDC_CHECK_FIND_IN_BOOKVARS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,70,105,10
+    CONTROL         "Find in probability variables",
+                    IDC_CHECK_FIND_IN_PROBVARS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,83,105,10
+    GROUPBOX        "Find where?",IDC_STATIC,7,30,121,72
+    GROUPBOX        "Find how?",IDC_STATIC,133,30,133,72
+    CONTROL         "Case sensitive",IDC_CHECK_CASE_SENSITIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,148,44,61,10
+    CONTROL         "Whole words",IDC_CHECK_WHOLE_WORDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,148,57,57,10
+END
+
+IDD_DIALOG_SEARCH_RESULTS DIALOG DISCARDABLE  0, 0, 186, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Search results"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close this window",IDOK,7,188,172,14
+    CONTROL         "List1",IDC_LIST_RESULTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,172,177
+END
+
+IDD_DIALOG_MODIFICATION DIALOG DISCARDABLE  0, 0, 393, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Variable modification"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,336,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,336,24,50,14
+    LTEXT           "Variable to modify",IDC_STATIC,7,7,64,14,SS_SUNKEN
+    LTEXT           "Modification",IDC_STATIC,7,24,64,14,SS_SUNKEN
+    COMBOBOX        IDC_COMBO_VARNAME,76,7,251,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MODIFICATION,76,24,251,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_STRVARS DIALOG DISCARDABLE  0, 0, 294, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "String variables..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,159,50,14
+    CONTROL         "List1",IDC_LIST_STRVARS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,280,148
+    PUSHBUTTON      "Edit...",IDC_BUTTON_EDIT_STRVAR,61,159,50,14
+    PUSHBUTTON      "Add...",IDC_BUTTON_ADD_STRVAR,115,159,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE_STRVAR,169,159,50,14
+END
+
+IDD_DIALOG_STRVAR_PROPERTIES DIALOG DISCARDABLE  0, 0, 388, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,199,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,62,199,50,14
+    LTEXT           "Variable name:",IDC_STATIC,7,7,64,14,SS_SUNKEN
+    LTEXT           "Variable body:",IDC_STATIC,7,24,64,14,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_STRVAR_NAME,76,7,305,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STRVAR_BODY,7,42,374,82,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LISTBOX         IDC_LIST_STRVAR_VARS,169,146,157,48,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move Up",IDC_BUTTON_MOVE_UP,331,146,50,14
+    PUSHBUTTON      "Move Down",IDC_BUTTON_MOVE_DOWN,331,163,50,14
+    PUSHBUTTON      "Refresh list",IDC_BUTTON_REFRESH_LIST,331,180,50,14
+    LTEXT           "String variable parameters:",IDC_STATIC,169,128,97,14,
+                    SS_SUNKEN
+    CONTROL         "Save in the bookmarks file",
+                    IDC_CHECK_SAVE_IN_THE_BOOKMARKS_FILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,81,24,99,10
+    LISTBOX         IDC_LIST_STRVAR_DEPENDENCIES,7,146,157,48,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "String variable dependencies:",IDC_STATIC,7,128,97,14,
+                    SS_SUNKEN
+END
+
+IDD_DIALOG_TRIGGERED_STRINGS DIALOG DISCARDABLE  0, 0, 294, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Triggered string variables..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,159,50,14
+    PUSHBUTTON      "Edit...",IDC_BUTTON_EDIT_TRIGGERED_STRING,61,159,50,14
+    PUSHBUTTON      "Add...",IDC_BUTTON_ADD_TRIGGERED_STRINGS,115,159,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE_TRIGGERED_STRING,169,159,50,
+                    14
+    CONTROL         "List1",IDC_LIST_TRIGGERED_STRINGS,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,280,148
+END
+
+IDD_DIALOG_TRIGGERED_STRING_PROPERTIES DIALOG DISCARDABLE  0, 0, 398, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Triggered string variable properties..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,334,7,57,14
+    PUSHBUTTON      "Cancel",IDCANCEL,334,26,57,14
+    LTEXT           "Variable name",IDC_STATIC,7,7,64,14,SS_SUNKEN
+    LTEXT           "Values",IDC_STATIC,7,25,64,14,SS_SUNKEN
+    CONTROL         "List1",IDC_LIST_CONDITIONS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,76,25,251,72
+    PUSHBUTTON      "Add condition",IDC_ADD_CONDITION,334,45,57,14
+    PUSHBUTTON      "Delete condition",IDC_DELETE_CONDITION,334,83,57,14
+    PUSHBUTTON      "Edit condition",IDC_BUTTON_EDIT_CONDITION,334,64,57,14
+    EDITTEXT        IDC_EDIT_TSVARNAME,76,7,251,14,ES_AUTOHSCROLL
+    LTEXT           "Default value",IDC_STATIC,7,100,64,12,SS_SUNKEN
+    COMBOBOX        IDC_COMBO_DEFAULT_VALUE,76,100,251,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_TRIGGERED_STRING_CONDITION_PROPERTIES DIALOG DISCARDABLE  0, 0, 389, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Triggered string variable condition properties..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,332,7,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,332,24,50,12
+    LTEXT           "Condition",IDC_STATIC,7,7,64,12,SS_SUNKEN
+    LTEXT           "Value",IDC_STATIC,7,24,64,12,SS_SUNKEN
+    COMBOBOX        IDC_COMBO_CONDITION,76,7,251,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_VALUE,76,24,251,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,0,1
+ PRODUCTVERSION 0,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Non-Linear Book Builder v0.1\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NLB_Bldr MFC Application\0"
+            VALUE "FileVersion", "0, 1, 0, 1\0"
+            VALUE "InternalName", "NLB_Bldr\0"
+            VALUE "LegalCopyright", "Copyright (C) Anton P. Kolosov (""Antokolos"") 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NLB_Bldr.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NLB Builder\0"
+            VALUE "ProductVersion", "0, 1, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_PAGE_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_DIALOG_LINK_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DIALOG_COMPERR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DIALOG_BOOKVARS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_BOOKVAR_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DIALOG_LEAFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_PROBABILITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DIALOG_PROBVAR_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG_FIND_TXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DIALOG_SEARCH_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DIALOG_MODIFICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DIALOG_STRVARS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_STRVAR_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_DIALOG_TRIGGERED_STRINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DIALOG_TRIGGERED_STRING_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_TRIGGERED_STRING_CONDITION_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER_ADD_PAGE    CURSOR  DISCARDABLE     "res\\add_page.cur"
+IDC_POINTER_ADD_LINK    CURSOR  DISCARDABLE     "res\\add_link.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+NLBE_10                 TEXT    DISCARDABLE     "res\\NLBE_10.bdy"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "NLB Builder\n\nnl_book\nNon-Linear Books (*.nlb)\n.nlb\nNLBBldr.Document\nNon-Linear Book"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NLB Builder"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_STR_DEFAULT_PAGE_CAPT "New"
+    IDS_STR_PAGE_VAR        ": (%s)"
+    IDS_STARTPOINT          "<S>"
+    IDS_ALREADY_EXIST       "This element already exists!"
+    IDS_LOOPS_CANNOT_EXIST  "Cannot start and end link at the same place!"
+    IDS_ERR_FILE_CORRUPT    "Operation with this file fails!\r\n"
+    IDS_ERROR_MB_CAPT       "Error!"
+    IDS_ERR_OUT_OF_MEMORY   "Out of memory!"
+    IDS_STRING_INS          "'+\r\n\t\t' "
+    IDS_STRING_PARA         "</div> '+\r\n\t\t' <div class=""paragraph""> '+\r\n\t\t'"
+    IDS_STRING_DASH         "&mdash;"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_ADDSTARTPOINT   "Add startpoint to the document\nAdd startpoint"
+    ID_EDIT_ADDLINK         "Add new link to the document\nAdd link"
+    ID_EDIT_ADDBOOKPAGE     "Add new page to the book\nAdd page"
+    ID_EDIT_EDITPAGE_DELETEPAGE "Delete page from book\nDelete page"
+    ID_EDIT_EDITPAGE_EDITPROPERTIES "Edit this page\nEdit page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_EDITLINK_DELETELINK "Delete link from book\nDelete link"
+    ID_EDIT_EDITLINK_EDITPROPERTIES "Edit this link\nEdit link"
+    ID_FILE_EXPORTTO_NLBENGINEV10 
+                            "Export to Antokolos NLB Engine, version 0.1\nExport to NLB Engine v0.1"
+    ID_BUILD_COMPILE        "Compiles this book\nCompile"
+    ID_EDIT_SELECTALL       "Selects whole book\nSelect All"
+    ID_EDIT_DESELECTALL     "Deselects whole book\nDeselect All"
+    ID_EDIT_INVERTSELECTION "Inverts selection\nInvert Selection"
+    ID_EDIT_BOOKVARIABLES   "View a list of the book variables\nBook variables"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_INS_BEGIN    "\r\n\r\n\t\tidMainPage.innerHTML = GenerateButtonsHTML();\r\n\t\tidMainPage.innerHTML +=\r\n\t\t'<h3 class=""center"">%s</h3>'+\r\n\t\t' <div class=""paragraph""> '+\r\n\t\t'"
+    IDS_STRING_INS_END      " '+\r\n\t\t' </div> ';\r\n\r\n\t\tidMainPage.innerHTML += \r\n\t\t' <ul> '+\r\n"
+    IDS_STRING_OPTION       "\t\t' <li> '+\r\n\t\t' <span class=""BookLink"" '+\r\n\t\t' \tonClick=""ProceedOpinion('+""'%d'""+')"" '+\r\n\t\t'\tonMouseOver=""MouseOverBookLink(this);"" '+\r\n\t\t'\tonMouseOut=""MouseOutBookLink(this);""> '+\r\n\t\t' %s '+\r\n\t\t' </span> '+\r\n"
+    IDS_VERY_END            "\t\t' </ul> ';\r\n\t}\r\n\tbreak;\r\n\r\n"
+    IDS_STRING_NUM_PAGES    "var iNumPagesTotal = %d;   // Total number of pages in our book\r\n"
+    IDS_FILTER_NLB_ENGINE_10 "NLB Engine v0.1 book file (*.htm)|*.htm||"
+    IDS_FNAME_NLB_ENGINE_10 "NewNLB"
+    IDS_EXT_NLB_ENGINE_10   "js"
+    IDS_STRING_STARTPOINT   "var strStartPoint = ""%d"";   // Startpoint (page, from which the book starts)\r\n"
+    IDS_STRING_FUNC_BEGINS  "\r\nfunction GoTo(toGo)\r\n{\r\n\tswitch(toGo)\r\n\t{\r\n"
+    IDS_STRING_FUNC_ENDS    "\tdefault: alert(""Internal book error in GoTo()!"");\r\n\t}   // switch(toGo)\r\n}\r\n"
+    IDS_STRING_OPTION_WITH_CONSTRAINT 
+                            "\t\t((%s) ?\r\n\t\t\t' <li> '+\r\n\t\t\t' <span class=""BookLink"" '+\r\n\t\t\t' \tonClick=""ProceedOpinion('+""'%d'""+')"" '+\r\n\t\t\t'\tonMouseOver=""MouseOverBookLink(this);"" '+\r\n\t\t\t'\tonMouseOut=""MouseOutBookLink(this);""> '+\r\n\t\t\t' %s '+\r\n\t\t\t' </span> '\r\n\t\t: '') +\r\n"
+    IDS_STRING_PAGE_VAR     "\r\n\t\tvar %s = (ArrPageVisitState[%d] == '1');   // true, if page with number %d was visited"
+    IDS_STRING_CASE_BEGINS  "\tcase ""%d"":    // Page number %d\r\n\t{"
+    IDS_STRING_DECLARE_VAR_BUF "\r\n\t\tvar %s ="
+    IDS_STR_DEFAULT_LINK_CAPT "New link"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMPERR_CAPT        "Compiler error #%d"
+    STRERR_SYNTAX_ERROR     "Syntax error"
+    STRERR_BADSYMB_BEFORE_VAR "Invalid character before variable identifier"
+    STRERR_BADSYMB_BEFORE_OPERATION 
+                            "Invalid character before operation identifier"
+    STRERR_UNKNOWN_OPERATION "Unknown operation"
+    STRERR_BADSYMB_BEFORE_OPAR "Invalid character before '('"
+    STRERR_BADSYMB_BEFORE_CPAR "Invalid character before ')'"
+    STRERR_PARENTHESES_NOT_BALANCED "Parentheses not balanced"
+    STRERR_UNKNOWN_SYMBOL   "Unknown symbol in formula"
+    STRERR_UNKNOWN_OPERATION_SIGN 
+                            "Unknown operation sign or parentheses not balanced"
+    STRERR_NOT_ENOUGH_ARGS_FOR_AND "Not enough arguments for '&&'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_OR "Not enough arguments for '||'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_NOT "Not enough arguments for '!'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_XOR "Not enough arguments for '^'"
+    STRERR_DIGIT_STARTS_VAR "Digit in the beginning of the variable identifier. (Please note: exponential form of number is NOT allowed!)"
+    STRERR_UNKNOWN          "Unknown error"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    STRERR_VAR_TOO_LONG     "Variable name length is more than maximum allowed length %d"
+    STRERR_VAR_NOT_FOUND    "Variable '%s' is not found in the book!"
+    IDS_COMPERR_QUEST       "\r\nChange formula anyway?"
+    IDS_ERROR_VAR_ALREADY_EXISTS 
+                            "Variable '%s' already exists! Please change its name!"
+    IDS_ERROR_VAR_INCORRECT "Variable '%s' is incorrect! Valid variable identifier contains only 'a'-'z', 'A'-'Z', '_', '0'-'9', it cannot has whitespaces inside and cannot starts with digit."
+    IDS_ERROR_LINK_CAPT_CANNOT_BE_EMPTY "Link caption cannot be empty!"
+    IDS_ERR_UNKNOWN         "Unknown error!"
+    IDS_UITXT_LV_ERROR      "Error"
+    IDS_STRING_BOOK_VAR     "\r\n\t\tvar %s = (%s);\t// Complex variable definition"
+    IDS_COMPILE_SUCCESSFUL  "Compile successful! Total %d page(s) and %d link(s)."
+    IDS_UITXT_LV_LNK_NAME   "Link"
+    IDS_STARTPOINT_NEEDED   "Book startpoint is missing!\r\nBook startpoint is a page, from which book starts. Book cannot exist without it. To continue, please set book startpoint using Edit->Add Startpoint or toolbar.\r\n(Hint: To set startpoint, select page first. Then, after selecting Edit->Add Startpoint from main menu, this page will become a startpoint)"
+    IDS_SIGNATURE_CORRUPT   "Incorrect file signature! Cannot load this file!"
+    IDS_VERSION_MISMATCH    "This file has version %d. Cannot open this file in current version  of program."
+    IDS_CONFIRM_MB_CAPT     "Confirm"
+    IDS_CONFIRM_DELSEL_PAGES "Delete all selected pages?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFIRM_DELSEL_LINK "Delete selected link?"
+    IDS_ERR_CLIPBOARD_ERROR "Clipboard error!"
+    IDS_UITXT_LV_BOOKVAR_NAME "Variable name"
+    IDS_UITXT_LV_BOOKVAR_BODY "Variable body"
+    IDS_STRING_VAR_IN_BRACKETS "( %s )"
+    IDS_STRING_VAR_IN_BRACKETS_CONCAT " && ( %s )"
+    STRERR_NOT_ENOUGH_ARGS_FOR_PLUS "Not enough arguments for '+'"
+    IDS_STRING_PROB_VAR     "\r\n\t\tvar %s = KdY(%u, %u);   // Probability variable definition"
+    IDS_CONFIRM_DEL_BOOKVAR "Delete selected book variable?"
+    IDS_BOOKVAR_BODY_CANNOT_BE_EMPTY "Book variable body cannot be empty!"
+    IDS_FORMULA_CONTAINS_INFINITE_LOOP 
+                            "This formula contains infinite loop! Example:\r\nFormula == fVar1;\r\nvar fVar1 = fVar2;\r\nvar fVar2 = fVar1;\r\nThis is serious error and you must correct it.\r\nChange formula anyway?"
+    IDS_ERROR_CALLING_CHECK_LINK_CONTAINS_IL 
+                            "Error calling CheckLinkContainInfiniteLoop();"
+    IDS_ERR_IL_SHORT_MESSAGE "This formula contains infinite loop!"
+    IDS_APOSTROPHE_REPLACEMENT "'+""'""+'"
+    IDS_UITXT_LV_LEAF_NAME  "Leaf name"
+    IDS_STRING_PAGEVAR_BUFFER_FOR_PASTE "%s%u"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_LEAFS           "View a list of the book leafs\nBook leafs"
+    ID_EDIT_PROBABILITYVARIABLES 
+                            "View a list of the probability variables\nProbability variables"
+    ID_EDIT_CHANGEALLPAGES  "Make editions in all book pages of the book\nEdit all pages"
+    ID_EDIT_STRINGVARIABLES "View a list of the string variables\nString variables"
+    ID_EDIT_TRIGGEREDSTRINGS 
+                            "View a list of the triggered strings\nTriggered strings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROBVAR_CHANCE_BUF  "%ud%u"
+    IDS_CONFIRM_DEL_PROBVAR "Delete selected variable?"
+    IDS_UITXT_LV_PROBVAR_NAME "Variable name"
+    IDS_UITXT_LV_PROBVAR_CHANCE "Chance"
+    IDS_STRING_OPTION_WITH_MODIFICATION 
+                            "\t\t' <li> '+\r\n\t\t' <span class=""BookLink"" '+\r\n\t\t' \tonClick=""ModifyVars('+""'%d'""+'); ProceedOpinion('+""'%d'""+');"" '+\r\n\t\t'\tonMouseOver=""MouseOverBookLink(this);"" '+\r\n\t\t'\tonMouseOut=""MouseOutBookLink(this);""> '+\r\n\t\t' %s '+\r\n\t\t' </span> '+\r\n"
+    IDS_TEXT_NOT_FOUND      "Searched text not found!"
+    IDS_ERR_CANNOT_RETRIEVE_NLBE_10_RESOURCE 
+                            "Cannot retrieve NLBE_10 resource!"
+    IDS_ERR_CANNOT_CREATE_NLBE_10_BUF "Cannot create NLBE_10 buffer!"
+    IDS_STRING_NLB_DEFAULT_TITLE "Non-Linear Book"
+    STRERR_NOT_MATCH_ARGS_FOR_AND "Type mismatch for '&&'"
+    STRERR_NOT_MATCH_ARGS_FOR_OR "Type mismatch for '||'"
+    STRERR_NOT_MATCH_ARGS_FOR_NOT "Type mismatch for '!'"
+    STRERR_NOT_MATCH_ARGS_FOR_XOR "Type mismatch for '^'"
+    STRERR_NOT_MATCH_ARGS_FOR_PLUS "Type mismatch for '+'"
+    STRERR_NOT_MATCH_ARGS_FOR_MINUS "Type mismatch for '-'"
+    STRERR_NOT_MATCH_ARGS_FOR_MUL "Type mismatch for '*'"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    STRERR_NOT_MATCH_ARGS_FOR_DIV "Type mismatch for '/'"
+    STRERR_NOT_MATCH_ARGS_FOR_UNPLUS "Type mismatch for unary '+'"
+    STRERR_NOT_MATCH_ARGS_FOR_UNMINUS "Type mismatch for unary '-'"
+    STRERR_NOT_MATCH_ARGS_FOR_EQ "Type mismatch for '=='"
+    STRERR_NOT_MATCH_ARGS_FOR_NEQ "Type mismatch for '!='"
+    STRERR_NOT_MATCH_ARGS_FOR_G "Type mismatch for '>'"
+    STRERR_NOT_MATCH_ARGS_FOR_L "Type mismatch for '<'"
+    STRERR_NOT_MATCH_ARGS_FOR_GE "Type mismatch for '>='"
+    STRERR_NOT_MATCH_ARGS_FOR_LE "Type mismatch for '<='"
+    STRERR_NOT_ENOUGH_ARGS_FOR_MINUS "Not enough arguments for '-'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_MUL "Not enough arguments for '*'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_DIV "Not enough arguments for '/'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_UNPLUS "Not enough arguments for unary '+'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_UNMINUS "Not enough arguments for unary '-'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_EQ "Not enough arguments for '=='"
+    STRERR_NOT_ENOUGH_ARGS_FOR_NEQ "Not enough arguments for '!='"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    STRERR_NOT_ENOUGH_ARGS_FOR_G "Not enough arguments for '>'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_L "Not enough arguments for '<'"
+    STRERR_NOT_ENOUGH_ARGS_FOR_GE "Not enough arguments for '>='"
+    STRERR_NOT_ENOUGH_ARGS_FOR_LE "Not enough arguments for '<='"
+    STRERR_BADSYMB_BEFORE_NUM "Invalid character before number!"
+    STRERR_MULTIPLE_UNARY_OPERATION 
+                            "Multiple unary operations (example --a) is NOT allowed!"
+    IDS_UITXT_LV_MODIFICATIONS_VARNAME "Variable name"
+    IDS_UITXT_LV_MODIFICATIONS_VARMODIFICATION "Modification"
+    IDS_CONFIRM_DEL_VARMODIFICATION "Delete selected variable modification?"
+    IDS_STRING_GLOBALVAR_DEFINITION_BLOCK 
+                            "var %s = %s; // Global variable (will be saved in bookmarks file)\r\n"
+    IDS_STRING_OPTION_WITH_CONSTRAINT_AND_MODIFICATION 
+                            "\t\t((%s) ?\r\n\t\t\t' <li> '+\r\n\t\t\t' <span class=""BookLink"" '+\r\n\t\t\t' \tonClick=""ModifyVars('+""'%d'""+'); ProceedOpinion('+""'%d'""+');"" '+\r\n\t\t\t'\tonMouseOver=""MouseOverBookLink(this);"" '+\r\n\t\t\t'\tonMouseOut=""MouseOutBookLink(this);""> '+\r\n\t\t\t' %s '+\r\n\t\t\t' </span> '\r\n\t\t: '') +\r\n"
+    IDS_STRING_MODIFYVAR_FUNC_BEGINS 
+                            "\r\nfunction ModifyVars(byLnk)\r\n// Makes variable modifications in the case of use\r\n// of the corresponding link\r\n{\r\n\tswitch (byLnk)\r\n\t{\r\n"
+    IDS_STRING_MODIFYVAR_FUNC_ENDS 
+                            "\tdefault: alert(""Internal book error in ModifyVars()!"");\r\n\t}\r\n}\r\n"
+    IDS_STRING_CUR_LNK_CASE_BEGINS "\tcase ""%d"":\r\n\t{\r\n"
+    IDS_STRING_CUR_LNK_CASE_ENDS "\r\n\t}\r\n\tbreak;\r\n"
+    IDS_STRING_CURRENT_BOOKVAR_MODIFICATION "\r\n\t\t%s = %s;"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_SAVEVARS_FUNC_BEGINS 
+                            "\r\nfunction SaveGlobalVariables(f)\r\n// Saves global variables as strings in the text file f\r\n// f must be opened for writing\r\n{\r\n"
+    IDS_STRING_SAVEVARS_FUNC_ENDS "\r\n}\r\n"
+    IDS_BOOKVAR_SAVE_STATEMENT 
+                            "\r\n\tf.WriteLine(%s.toString(10));\t// Integer variable will be converted to string, parameter value 10 is a radix"
+    IDS_STRING_LOADVARS_FUNC_BEGINS 
+                            "\r\nfunction LoadGlobalVariables(f)\r\n// Restores global variables from the text file f\r\n// f must be opened for reading\r\n{\r\n"
+    IDS_STRING_LOADVARS_FUNC_ENDS "\r\n}"
+    IDS_BOOKVAR_LOAD_STATEMENT 
+                            "\r\n\t%s = eval(f.ReadLine());\t// eval function converts string to a number"
+    IDS_STRING_PAGE_VAR_FOR_MODIFY_VARS 
+                            "\r\n\t\tvar %s = eval(ArrPageVisitState[%d]);   // 1, if page with number %d was visited, zero otherwise. Note, that this is a NUMBER, not a boolean... Though, it not makes a difference for JavaScript ;-)"
+    IDS_CONFIRM_CHANGE_STARTPOINT 
+                            "Do you really want to change current startpoint?"
+    IDS_NOTE_MB_CAPT        "Please note!"
+    IDS_CANNOT_ADD_VARMODIFICATION 
+                            "Cannot add var modification right now!\nYou must create at least one global var (which will be modified)\nand at least one non-global var (modificator) to do this."
+    IDS_UITXT_LV_LINKNUMBERS_LINK_CAPTION "Link caption"
+    IDS_UITXT_LV_LINKNUMBERS_LINK_CONSTRAINTS "Link constraints"
+    IDS_STRING_LINK_CAPTION_BUFFER_FOR_LV_LINKNUMBERS "[%d] %s"
+    IDS_STRING_LINK_CONSTRAINTS_BUFFER_FOR_LV_LINKNUMBERS "{ %s }"
+    IDS_CONFIRM_ABORT_MASS_OPERATION "Abort mass operation?"
+    IDS_STRING_PERCENT_COMPLETE_FORMAT_STRING "%d%%"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_PAGE_PROPERTIES_DIALOG_CAPT_FOR_MASS_OPERATION_BUF 
+                            "Page properties: page %d of %d"
+    IDS_STRING_STR_VARVALUE_BUFFER "' + %s + '"
+    IDS_STRING_CANNOT_FIND_VAR_TO_DISPLAY_VALUE_BUFFER 
+                            "Cannot find var '%s' to display its value in NLB page contents.\r\nPossible reasons:\r\n1) No such var exists.\r\n2) This var exists, but it is NOT global. Only global vars can be displayed.\r\nPlease note, if you want to type percent sign, use combination %%.\r\nExporting is aborting now. Do you want to correct faulty page right now?"
+    IDS_UITXT_LV_STRVAR_NAME "String name"
+    IDS_UITXT_LV_STRVAR_BODY "String value"
+    IDS_STRING_CANNOT_FIND_VAR_TO_DISPLAY_VALUE_BUFFER_WITHOUT_EDIT_GREETING_FOR_DIALOG_STRVAR_PROPERTIES 
+                            "Cannot find var '%s' to display its value in NLB page contents.\r\nPossible reasons:\r\n1) No such var exists.\r\n2) This var exists, but it is NOT global. Only global vars can be displayed.\r\nOR\r\n3) This variable is string variable and you incorrectly specified its parameters.\r\nPlease note, if you want to type percent sign, use combination %%."
+    IDS_STRING_TRIGGERED_STRING_VARVALUE_BUFFER "' + %s() + '"
+    IDS_CONFIRM_DEL_STRVAR  "Delete selected string variable?"
+    IDS_STRING_GLOBAL_STRVAR_DEFINITION_BLOCK "var %s = '%s';\r\n"
+    IDS_CR_SYMBOLIC         " <CR> "
+    IDS_STRVAR_SAVE_STATEMENT 
+                            "\r\n\tf.WriteLine(%s);\t// Simply writes string variable"
+    IDS_STRVAR_LOAD_STATEMENT 
+                            "\r\n\t%s = f.ReadLine();\t// Simply reads string variable"
+    IDS_STRING_BOOK_VAR_FOR_TS 
+                            "\r\n\tvar %s = (%s);\t// Complex variable definition for triggered string"
+    IDS_STRING_INS_BEGIN_WO_HEADER 
+                            "\r\n\r\n\t\tidMainPage.innerHTML = GenerateButtonsHTML();\r\n\t\tidMainPage.innerHTML +=\r\n\t\t' <div class=""paragraph""> '+\r\n\t\t'"
+    IDS_STRING_PROB_VAR_FOR_TS 
+                            "\r\n\tvar %s = KdY(%u, %u);   // Probability variable definition"
+    IDS_STRING_PAGE_VAR_FOR_TS 
+                            "\r\n\tvar %s = (ArrPageVisitState[%d] == '1');   // true, if page with number %d was visited"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_CANNOT_FIND_VAR_TO_DISPLAY_INPUT_BUFFER 
+                            "Cannot find var '%s' to display its input form in NLB page contents.\r\nPossible reasons:\r\n1) No such var exists.\r\n2) This var exists, but it has variables.\r\n3) This var exists and haven't any variable, but 'Save in the bookmarks file' option is unchecked.\r\nPlease note, if you want to type dollar sign, use combination $$.\r\nExporting is aborting now. Do you want to correct faulty page right now?"
+    IDS_STRING_STR_VARINPUT_BUFFER 
+                            " <input type=""Text"" value=""' + %s + '"" onChange=""%s = this.value""> "
+    IDS_STRING_CANNOT_FIND_VAR_TO_DISPLAY_INPUT_BUFFER_WITHOUT_EDIT_GREETING 
+                            "Cannot find var '%s' to display its input form in NLB page contents.\r\nPossible reasons:\r\n1) No such var exists.\r\n2) This var exists, but it has variables.\r\n3) This var exists and haven't any variable, but 'Save in the bookmarks file' option is unchecked.\r\nPlease note, if you want to type dollar sign, use combination $$."
+    IDS_STRERR_ERROR_IN_STRVAR_PARAM_SYNTAX 
+                            "Unidentified control sequence wilth #. Please note, if you want to type # sign, use combination ##."
+    IDS_STRERR_SELFREFERENCE_FOUND 
+                            "Please note, you cannot create string variable referencing itself!"
+    IDS_STRERR_EMPTY_STRVAR_PARAM 
+                            "String variable parameter cannot be empty string or consist of spaces!"
+    IDS_STRERR_ERROR_IN_STRVAR_PARAM_SYNTAX2 
+                            "Unidentified control sequence wilth $. Please note, if you want to type dollar sign, use combination $$."
+    IDS_STR_VAR_PARAM_SEPS  " \t(),"
+    IDS_STRING_DEPENDENT_STRVAR_DEFINITION_BLOCK 
+                            "\nfunction %s(%s)\n{\n\tvar str_%s = '%s';\n\tvar arr_%s = str_%s.split('#');\n\tvar iMax = arr_%s.length;\n\tvar Result = '';\n\t\n\tfor (i = 0; i < iMax; i++)\n\t{\n\t\tif (i %% 2 == 0)\n\t\t\tResult += arr_%s[i];\n\t\telse\n\t\t{\n\t\t\tif (arr_%s[i].length == 0)\n\t\t\t\tResult += '#';\t// It was ##\n\t\t\telse\n\t\t\t\tResult += eval(arr_%s[i]);\t// It was parameter\n\t\t}\n\t}\n\treturn Result;\n}\n"
+    IDS_STR_VAR_PARAM_CUR_WITH_COMMA_BUF "%s, "
+    IDS_BACKSLASH_REPLACEMENT "\\\\"
+    IDS_CR                  "\r\n"
+    IDS_STRERR_ERROR_IN_STRVAR_PARAM_SYNTAX3 
+                            "Unidentified control sequence wilth %. Please note, if you want to type percent sign, use combination %%."
+    IDS_STRING_DEPENDENT_STRVAR_WITHOUT_PARAMETERS_DEFINITION_BLOCK 
+                            "\nfunction %s()\n{\n\tvar Result = '%s';\n\treturn Result;\n}\n"
+    IDS_UITXT_LV_TRIGGERED_STRING_NAME "Triggered String"
+    IDS_UITXT_LV_TRIGGERED_STRING_INFO "Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFIRM_DEL_TRIGGERED_STRING "Delete selected triggered string?"
+    IDS_UITXT_LV_TRIGGERED_STRING_PROPERTIES_CONDITION "Condition"
+    IDS_UITXT_LV_TRIGGERED_STRING_PROPERTIES_VALUE "Value"
+    IDS_CONFIRM_DEL_TRIGGERED_STRING_CONDITION_PAIR 
+                            "Delete selected TS condition pair?"
+    IDS_TRIGGERED_STRING_BODYPART_BUFFER "%s -> %s"
+    IDS_TRIGGERED_STRING_BODY_SEPARATOR ", "
+    IDS_STRING_TRIGGERED_STRING_DEFINITION_BLOCK 
+                            "\nfunction %s()\n{%s\n%s\n}\n"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK1 
+                            "\n\tif (%s) return %s;"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK2 
+                            "\n\telse if (%s) return %s;"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK3 
+                            "\n\telse return %s;"
+    IDS_STRING_TSVAR_DEFAULT_EMPTY_VALUE "<EMPTY STRING>"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK4 
+                            "\n\telse return '';"
+    IDS_ERR_UNKNOWN_ERROR_WHILE_PROCESSING_TRIGGERED_STRING_VAR 
+                            "Unknown error while processing triggered string variable!"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK5 
+                            "\n\tif (%s) return %s();"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK6 
+                            "\n\telse if (%s) return %s();"
+    IDS_STRING_TO_INSERT_IN_TS_VAR_DEFINITION_FORMAT_BLOCK7 
+                            "\n\telse return %s();"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_TSVAR_DEFAULT_DEPENDENT_STRING_VALUE "%s()"
+    IDS_STRING_TSVAR_DEPENDENT_STRING_VALUE "%s()"
+    IDS_TRIGGERED_STRING_BODYPART_BUFFER_W_DEPENDENT_STRVAR "%s -> %s()"
+    IDS_TRIGGERED_STRING_BODYPART_DEFAULT_BUFFER "else -> %s"
+    IDS_TRIGGERED_STRING_BODYPART_DEFAULT_BUFFER_W_DEPENDENT_STRVAR 
+                            "else -> %s()"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NLB_Bldr.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

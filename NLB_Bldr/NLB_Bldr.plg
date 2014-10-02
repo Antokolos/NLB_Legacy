@@ -1,0 +1,140 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NLB_Bldr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Release/NLB_Bldr.res" /d "NDEBUG" "E:\NLB_LEGACY\NLB_BLDR\NLB_Bldr.rc"" 
+Creating temporary file "C:\DOCUME~1\1\LOCALS~1\Temp\RSP29.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/NLB_Bldr.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\NLB_LEGACY\NLB_BLDR\CBookPage.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CBookVar.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CColorSelectButton.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CDrawable.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CLink.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CModificationsList.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CProbVar.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CStringVar.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\CTriggeredString.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogBookVarProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogBookVars.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogComperr.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogFindTxt.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogLeafs.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogLinkProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogModification.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogPageProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogProbability.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogProbVarProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogSearchResults.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogStrVarProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogStrVars.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogTriggeredStringConditionProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogTriggeredStringProperties.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\DialogTriggeredStrings.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\funcs.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\MainFrm.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\NLB_Bldr.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\NLB_BldrDoc.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\NLB_BldrView.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\ClipFuncs\ClipFuncs.cpp"
+"E:\NLB_LEGACY\NLB_BLDR\MathTrans\CMathTrans.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\1\LOCALS~1\Temp\RSP29.tmp" 
+Creating temporary file "C:\DOCUME~1\1\LOCALS~1\Temp\RSP2A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/NLB_Bldr.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\NLB_LEGACY\NLB_BLDR\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\1\LOCALS~1\Temp\RSP2A.tmp" 
+Creating temporary file "C:\DOCUME~1\1\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/NLB_Bldr.pdb" /machine:I386 /out:"Release/NLB_Bldr.exe" 
+.\Release\CBookPage.obj
+.\Release\CBookVar.obj
+.\Release\CColorSelectButton.obj
+.\Release\CDrawable.obj
+.\Release\CLink.obj
+.\Release\CModificationsList.obj
+.\Release\CProbVar.obj
+.\Release\CStringVar.obj
+.\Release\CTriggeredString.obj
+.\Release\DialogBookVarProperties.obj
+.\Release\DialogBookVars.obj
+.\Release\DialogComperr.obj
+.\Release\DialogFindTxt.obj
+.\Release\DialogLeafs.obj
+.\Release\DialogLinkProperties.obj
+.\Release\DialogModification.obj
+.\Release\DialogPageProperties.obj
+.\Release\DialogProbability.obj
+.\Release\DialogProbVarProperties.obj
+.\Release\DialogSearchResults.obj
+.\Release\DialogStrVarProperties.obj
+.\Release\DialogStrVars.obj
+.\Release\DialogTriggeredStringConditionProperties.obj
+.\Release\DialogTriggeredStringProperties.obj
+.\Release\DialogTriggeredStrings.obj
+.\Release\funcs.obj
+.\Release\MainFrm.obj
+.\Release\NLB_Bldr.obj
+.\Release\NLB_BldrDoc.obj
+.\Release\NLB_BldrView.obj
+.\Release\StdAfx.obj
+.\Release\ClipFuncs.obj
+.\Release\CMathTrans.obj
+.\Release\NLB_Bldr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\1\LOCALS~1\Temp\RSP2B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CBookPage.cpp
+CBookVar.cpp
+CColorSelectButton.cpp
+CDrawable.cpp
+CLink.cpp
+CModificationsList.cpp
+CProbVar.cpp
+CStringVar.cpp
+CTriggeredString.cpp
+DialogBookVarProperties.cpp
+DialogBookVars.cpp
+DialogComperr.cpp
+DialogFindTxt.cpp
+DialogLeafs.cpp
+DialogLinkProperties.cpp
+DialogModification.cpp
+DialogPageProperties.cpp
+DialogProbability.cpp
+DialogProbVarProperties.cpp
+DialogSearchResults.cpp
+Generating Code...
+Compiling...
+DialogStrVarProperties.cpp
+DialogStrVars.cpp
+DialogTriggeredStringConditionProperties.cpp
+DialogTriggeredStringProperties.cpp
+DialogTriggeredStrings.cpp
+funcs.cpp
+MainFrm.cpp
+NLB_Bldr.cpp
+NLB_BldrDoc.cpp
+NLB_BldrView.cpp
+ClipFuncs.cpp
+CMathTrans.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+NLB_Bldr.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

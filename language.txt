@@ -1,0 +1,13 @@
+Please note, that this program does not support Unicode.
+If you see weird symbols instead of letters, you need to change the system locale.
+To do this, go to the
+Control Panel -> Clock, Language, and Region -> Change display language
+(or type command control.exe intl.cpl in terminal)
+and change system locale to the language of your choice.
+--------------------------------------------------------
+Пожалуйста, имейте в виду, что эта программа не поддерживает Юникод.
+Если вы видите странные символы вместо букв, вам нужно поменять системную локаль.
+Чтобы сделать это, перейдите в
+Control Panel -> Clock, Language, and Region -> Change display language
+(или наберите в терминале control.exe intl.cpl)
+и измените системную локаль на требуемый вам язык (скорее всего, русский :) )
